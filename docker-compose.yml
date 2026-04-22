@@ -1,11 +1,11 @@
 services:
   db:
     image: postgres:16-alpine
-    container_name: junior-test-db
+    container_name: tarefas-over-monge-db
     environment:
-      POSTGRES_DB: junior_challenge
-      POSTGRES_USER: junior
-      POSTGRES_PASSWORD: junior
+      POSTGRES_DB: monge
+      POSTGRES_USER: over
+      POSTGRES_PASSWORD: over
     ports:
       - "5432:5432"
     volumes:
@@ -19,7 +19,7 @@ services:
   backend:
     build:
       context: ./backend
-    container_name: junior-test-backend
+    container_name: tarefas-over-monge-backend
     environment:
       APP_SEED_DATA: "true"
       TASKS_REPOSITORY: "postgres"
@@ -35,7 +35,7 @@ services:
   frontend:
     build:
       context: ./frontend
-    container_name: junior-test-frontend
+    container_name: tarefas-over-monge-frontend
     depends_on:
       - backend
     ports:

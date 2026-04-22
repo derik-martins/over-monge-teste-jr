@@ -1,4 +1,4 @@
-# Flask Junior Challenge
+# Desafio Over + Monge
 
 Projeto base para um teste tecnico com backend em Flask, frontend estatico com Bootstrap, persistencia em PostgreSQL e orquestracao com Docker.
 
@@ -39,9 +39,9 @@ URLs:
 
 Credenciais padrao do banco no ambiente Docker:
 
-- Banco: `junior_challenge`
-- Usuario: `junior`
-- Senha: `junior`
+- Banco: `monge`
+- Usuario: `over`
+- Senha: `over`
 
 ## Executar backend localmente
 
@@ -76,4 +76,3 @@ backend/.venv/Scripts/python backend/wsgi.py
 - [PRD](./docs/prd.md)
 - [Design](./docs/design.md)
 - [Desafio do dev junior](./docs/desafio-junior.md)
-- [Criterios de avaliacao](./docs/avaliacao.md)
