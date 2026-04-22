@@ -35,7 +35,7 @@ services:
   frontend:
     build:
       context: ./frontend
-    container_name: tarefas-over-monge-frontend
+    container_name: tarefas-over-monge-f-frontend
     depends_on:
       - backend
     ports:
